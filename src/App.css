@@ -1,0 +1,107 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main {
+  background-color: rgb(148, 199, 243);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-size: x-large;
+  position: relative;
+}
+
+.headdiv {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+}
+
+.valuediv,
+.decresediv,
+.incresediv,
+.resetdiv {
+  position: absolute;
+  width: 50px; 
+  height: 50px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem; 
+}
+.valuediv {
+  top: calc(50% + 2.5rem);
+  left: calc(50% - 33px); 
+}
+
+.decresediv {
+  top: calc(50% + 2.5rem);
+  right: calc(62.5% - 50px - 3px - 50px); 
+}
+
+.incresediv {
+  top: calc(50% + 2.5rem); 
+  left: calc(51% + 50px + 3px); 
+}
+
+.resetdiv {
+  top: calc(55% + 2rem + 3rem); 
+  left: calc(50% - 86px); 
+  width: 150px;
+
+}
+button {
+  width: 150px;
+  height: 50px;
+  font-size: 1.5rem;
+  padding: 10px; 
+}
+.content{
+  padding: 1rem;
+  height: 50vh;
+  width: 50vh;
+}
